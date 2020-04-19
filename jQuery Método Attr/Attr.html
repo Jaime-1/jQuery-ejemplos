@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attr</title>
+    <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script>
+        $(document).on("ready",function(){
+            $("a").on("clik",function(e){
+                e.preventDefault();
+                var link  = $(this).attr("href");
+                location.href = link;
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <a href="http://www.codigofacilito.com">Clik para Salir de la Pagina...(:</a>
+</body>
+</html>
